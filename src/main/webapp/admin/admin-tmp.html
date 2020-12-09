@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理员</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/common1.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/member-msg.css">
+</head>
+<body>
+<div class="header">
+    <div>
+   <img class="logo-img" src="../images/logo-bule.png" />
+        <a href="../财经院校比赛管理系统主页.html" class="header-nav-item">首页</a>
+		<a href="../官方新闻_全国财经类高校XXXX大赛.html" class="header-nav-item">比赛动态</a>
+		<a href="../大赛通知_全国财经类高校XXXX大赛.html" class="header-nav-item">关于比赛</a>
+  
+	</div>
+    <div class="header-user">
+         <!--<img src="../images/stupid.jpg" class="header-user-img"/>-->
+        <a href="#" class="header-user-link to-admin-tmp2">管理主页</a>
+        <span class="header-user-line">|</span>
+        <a href="../login.html" class="header-user-link">退出</a>
+        <!--<a href="#" class="header-user-link">登录</a>-->
+        <!--<span class="header-user-line">|</span>-->
+        <!--<a href="#" class="header-user-link">注册</a>-->
+    </div>
+</div>
+
+<div class="admin-header">
+    <div class="admin-header-wrapper">
+        <img src="../images/nothing.jpg" class="admin-header-logo"/>
+        <div class="admin-header-message">
+            <h1 class="admin-header-message-title project-name">项目名称</h1>
+            <button class="edit-project-name">修改名称</button>
+            <div class="admin-header-message-icon-wrapper ">
+                <span class="admin-header-message-icon project-admin">负责人：<span class="p-admin"></span></span>
+            </div>
+            <div class="admin-header-message-icon-wrapper ">
+                <span class="admin-header-message-icon project-school">所属学校：<span class="p-school"></span></span>
+            </div>
+		</div>
+    </div>
+</div>
+
+<div class="admin-content">
+    <div class="admin-content-wrapper">
+        <h2 class="admin-content-title"><i class="fa fa-bicycle admin-content-title-icon"></i>&nbsp;项目信息</h2>
+        <div class="admin-content-message-wrapper">
+            <h3 class="admin-content-message-sub">【项目简介】</h3>
+            <a href="#" class="a-btn edit-project-describe">修改简介</a>
+            <p class="admin-content-message project-description">
+            </p>
+            <h3 class="admin-content-message-sub">【附件链接】</h3>
+            <a href="#" class="a-btn edit-project-file-link">修改链接</a>
+            <p class="admin-content-message project-file">
+            </p>
+        </div>
+        <h2 class="admin-content-title"><i class="fa fa-bicycle admin-content-title-icon"></i>&nbsp;团队信息</h2>
+        <div class="admin-content-message-wrapper">
+            <h3 class="admin-content-message-sub">【团队成员】</h3>
+            <a href="#" class="a-btn add-project-member">添加团队成员</a>
+			<div class="admin-header-wrapper">
+			<a href="#" class="list-group-item"><i class="ti ti-eye"></i> 邀请记录 </a><!--<span class="badge badge-primary">记录数</span> -->
+			</div>
+            <p class="admin-content-message">
+            </p>
+            <table class="table table-striped table-member">
+                <thead>
+                <tr>
+                    <th >姓名</th>
+                    <th >角色</th>
+                    <th style="display: none;">学校</th>
+                    <th style="display: none;">专业</th>
+                    <th style="display: none;">身份证号</th>
+                    <th >手机号</th>
+                    <th >电子邮箱</th>
+                    <th style="display: none;">入学年份</th>
+					<th style="width:220px;" class="edit-th">编辑</th>
+					<th style="display: none;"></th>
+                </tr>
+                </thead>
+                <tbody class="project-menber">
+                
+                </tbody>
+            </table>
+            <h3 class="admin-content-message-sub">【指导老师】</h3>
+            <a href="#" class="a-btn add-project-teacher">添加指导老师</a>
+            <p class="admin-content-message"></p>
+			<table class="table table-striped table-teacher">
+                <thead>
+                <tr>
+                    <th>姓名</th>            
+                    <th>学校</th>
+					<th>学院</th>
+					<th>职称</th>
+					<th style="width:220px;"  class="edit-th">操作</th>
+					<th style="display: none;"  ></th>
+                </tr>
+                </thead>
+                <tbody class="project-teacher">
+                </tbody>
+            </table>
+        </div>
+        <h2 class="admin-content-title"><i class="fa fa-bicycle admin-content-title-icon"></i>&nbsp;项目状态</h2>
+        <div class="admin-content-message-wrapper">
+            <h3 class="admin-content-message-sub">【当前进度】</h3>
+            <p class="project-status-content">
+            </p>
+        </div>
+        <h2 class="admin-content-title score-detail"><i class="fa fa-bicycle admin-content-title-icon"></i>&nbsp;评分情况</h2>
+        <div class="admin-content-message-wrapper score-detail">
+            <h3 class="admin-content-message-sub">【评分明细】</h3>
+            <div class="score-div">
+            	暂无评分
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-right">
+        <div style="margin-bottom:-10px;margin-top:-15px;"><h style="font-size:10px; letter-spacing:5px;color:gray">Powered By</h>
+				<h style="font-size:10px; letter-spacing:5px">计算机科学技术学院电子信息专业</h></div>
+				<div style="margin-bottom:-10px;margin-top:-5px;"><h style="font-size:10px; letter-spacing:5px;color:gray">Design By</h>
+				<h style="font-size:10px; letter-spacing:5px">叶浩晨</h></div>
+    </div>
+</div>
+<script src="../js/jquery.min.js"></script>
+<script src="../plugins/layer/layer.js"></script>
+<script src="../js/admin_tmp.js"></script>
+</body>
+</html>

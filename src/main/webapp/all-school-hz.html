@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>高级管理员</title>
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/font-awesome.css">
+		<link rel="stylesheet" href="./css/common1.css">
+		<link rel="stylesheet" href="./css/admin.css">
+		<link rel="stylesheet" href="./css/member-msg.css">
+		<link rel="stylesheet" href="./plugins/DataTables/css/jquery.dataTables.min.css" />
+	</head>
+
+	<body onload="setWidth();">
+		<div class="heigh-parent">
+			<div class="header" id="header">
+				<div class="link-head">
+					<img class="logo-img" src="images/logo-bule.png" />
+					<a href="财经院校比赛管理系统主页.html" class="header-nav-item">首页</a>
+					<a href="官方新闻_全国财经类高校XXXX大赛.html" class="header-nav-item">比赛动态</a>
+					<a href="大赛通知_全国财经类高校XXXX大赛.html" class="header-nav-item">关于比赛</a>
+
+				</div>
+				<div class="header-user">
+					<a href="#" class="header-user-link to-admin-tmp2">管理主页</a>
+					<span class="header-user-line">|</span>
+					<a href="login.html" class="header-user-link">退出</a>
+					<!--<a href="#" class="header-user-link">登录</a>-->
+					<!--<span class="header-user-line">|</span>-->
+					<!--<a href="#" class="header-user-link">注册</a>-->
+				</div>
+			</div>
+
+			<div class="admin-header" id="adminheader">
+				<div class="admin-header-wrapper">
+					<img src="./images/zuel.jpg" class="admin-header-logo" />
+					<div class="admin-header-message">
+						<h1 class="admin-header-message-title">中南财经政法大学</h1>
+						<div class="admin-header-message-icon-wrapper">
+							<span class="admin-header-message-small"><i class="fa fa-phone"></i>&nbsp;<span class="ad-phone"></span></span>
+							<span class="admin-header-message-small"><i class="fa fa-envelope-o"></i>&nbsp;<span class="ad-email"></span></span>
+						</div>
+					</div>
+					<div class="admin-header-count">
+						<button class="before-table-button export-record1">下载高校回执信息修改表</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="admin-content" id="admincontent">
+				<div class="admin-table-wrapper-little">
+					<table style="width:100%" id="project-table" class="stripe hover table admin-table text-center">
+						<thead>
+							<tr>
+								<th>回执表序号</th>
+								<th>下载回执表</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="footer" id="footer">
+			<div class="footer-right">
+				<div style="margin-bottom:-10px;margin-top:-15px;"><h style="font-size:10px; letter-spacing:5px;color:gray">Powered By</h>
+				<h style="font-size:10px; letter-spacing:5px">计算机科学技术学院电子信息专业</h></div>
+				<div style="margin-bottom:-10px;margin-top:-5px;"><h style="font-size:10px; letter-spacing:5px;color:gray">Design By</h>
+				<h style="font-size:10px; letter-spacing:5px">叶浩晨</h></div>
+			</div>
+		</div>
+		<script src="./js/jquery.min.js"></script>
+		<script src="./plugins/DataTables/js/jquery.dataTables.min.js"></script>
+		<script src="./plugins/layer/layer.js"></script>
+		<script src="./js/all-school-hz.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>校级管理员</title>
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/font-awesome.css">
+		<link rel="stylesheet" href="./css/common1.css">
+		<link rel="stylesheet" href="./css/admin.css">
+		<link rel="stylesheet" href="./css/member-msg.css">
+		<link rel="stylesheet" href="./plugins/DataTables/css/jquery.dataTables.min.css" />
+	</head>
+
+	<body onload="setWidth();">
+		<div class="heigh-parent">
+			<div class="header" id="header">
+				<div>
+					<img class="logo-img" src="images/logo-bule.png" />
+					<a href="财经院校比赛管理系统主页.html" class="header-nav-item">首页</a>
+					<a href="官方新闻_全国财经类高校XXXX大赛.html" class="header-nav-item">比赛动态</a>
+					<a href="大赛通知_全国财经类高校XXXX大赛.html" class="header-nav-item">关于比赛</a>
+					<a class="header-nav-item">回执信息</a>
+				</div>
+				<div class="header-user">
+					<a href="#" class="header-user-link to-admin-tmp2">管理主页</a>
+					<span class="header-user-line">|</span>
+					<a href="login.html" class="header-user-link">退出</a>
+					<!--<a href="#" class="header-user-link">登录</a>-->
+					<!--<span class="header-user-line">|</span>-->
+					<!--<a href="#" class="header-user-link">注册</a>-->
+				</div>
+			</div>
+
+			<div class="admin-header" id="adminheader">
+				<div class="admin-header-wrapper">
+					<img src="./images/zuel.jpg" class="admin-header-logo" />
+					<div class="admin-header-message">
+						<h1 class="admin-header-message-title">中南财经政法大学</h1>
+						<div class="admin-header-message-icon-wrapper">
+							<span class="admin-header-message-small"><i class="fa fa-phone"></i>&nbsp;<span class="ad-phone"></span></span>
+							<span class="admin-header-message-small"><i class="fa fa-envelope-o"></i>&nbsp;<span class="ad-email"></span></span>
+						</div>
+					</div>
+					<div class="admin-header-count">
+
+					</div>
+				</div>
+			</div>
+
+			<div class="admin-content" id="admincontent">
+				<div class="admin-table-wrapper">
+					<div class="before-table">
+						<span>网盘地址：</span>
+						<input readonly="readonly" class="input-style-text school-web-adress" type="text" />
+						<span style="margin-left: 20px;">网盘密码：</span>
+						<input readonly="readonly" class="input-style-text school-web-adress-psw" type="text" />
+						<button class="before-table-button edit-school-web-adress">填写网盘地址</button>
+						<p>说明：网盘内应包含学校校旗、创新创业工作巡礼展板、参赛创业项目展板三个图片jpg格式原文件</p>
+						<div class=""></div>
+						<div class="submit-box">
+							<label>提交高校回执表:</label>
+							<input type="file" accept="" class="msg-input upload-huizhi-input" placeholder="请选择文件"/>
+							<button class="before-table-button upload-huizhi">上传回执记录表</button>
+						</div>
+						<p>说明：请将回执单命名为--全国财经院校XXXX大赛决赛暨年会高校参赛回执统计表_XXX学校</p>
+						<button class="before-table-button export-record">下载高校回执表</button>
+						<button class="before-table-button add-record">修改回执记录表</button>
+						
+					</div>
+					<table style="width:100%" id="project-table" class="stripe hover table admin-table text-center">
+						<thead>
+							<tr>
+								<th>姓名</th>
+								<th>性别</th>
+								<th>人员类别</th>
+								<th>职务</th>
+								<th>手机号码</th>
+								<th>操作</th>
+								<th style="display:none;"></th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="footer" id="footer">
+			<div class="footer-right">
+				<div style="margin-bottom:-10px;margin-top:-15px;"><h style="font-size:10px; letter-spacing:5px;color:gray">Powered By</h>
+				<h style="font-size:10px; letter-spacing:5px">计算机科学技术学院电子信息专业</h></div>
+				<div style="margin-bottom:-10px;margin-top:-5px;"><h style="font-size:10px; letter-spacing:5px;color:gray">Design By</h>
+				<h style="font-size:10px; letter-spacing:5px">叶浩晨</h></div>
+			</div>
+		</div>
+		<script src="./js/jquery.min.js"></script>
+		<script src="./plugins/DataTables/js/jquery.dataTables.min.js"></script>
+		<script src="./plugins/layer/layer.js"></script>
+		<script src="./js/all-menber.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录界面</title>
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/font-awesome.css">
+		<link rel="stylesheet" href="./css/common1.css">
+		<link rel="stylesheet" href="./css/admin.css">
+		<link rel="stylesheet" href="./css/login.css">
+		<link rel="stylesheet" href="./css/one-login.css">
+	</head>
+
+	<body onload="setWidth();">
+		<div class="heigh-parent">
+			<div class="header" id="header">
+				<img class="logo-img" src="images/logo-bule.png" />
+				<div class="header-nav">
+					<a href="财经院校比赛管理系统主页.html" class="header-nav-item">首页</a>
+					<a href="官方新闻_全国财经类高校XXXX大赛.html" class="header-nav-item">比赛动态</a>
+					<a href="大赛通知_全国财经类高校XXXX大赛.html" class="header-nav-item">关于比赛</a>
+
+				</div>
+				<div class="header-user">
+					<!--<img src="../images/stupid.jpg" class="header-user-img"/>-->
+					<!--<a href="#" class="header-user-link">个人主页</a>
+        <span class="header-user-line">|</span>
+        <a href="#" class="header-user-link">退出</a>-->
+					<a href="login.html" class="header-user-link">登录</a>
+					<span class="header-user-line">|</span>
+					<a href="reg/reg.html" class="header-user-link">注册</a>
+				</div>
+			</div>
+
+			<div class="login-Background" id="loginback">
+				<div class="mid-Background">
+
+					<h2>登录</h2>
+					<div class="login-content">
+						<div class="one-input-wrapper">
+							用户名:<input type="text" class="one-input " id="admin-tel" />
+						</div>
+						<div class="one-input-wrapper">
+							密&emsp;码:<input type="password" class="one-input" id="admin-password" />
+						</div>
+						<div class="one-input-wrapper">
+							身&emsp;份:
+							<select class="select-login require" id="select">
+								<option value="0" style="display: none;" selected>请选择登录身份</option>
+								<option value="1">管理员</option>
+								<option value="1">评委</option>
+								<option value="2">参赛者</option>
+
+							</select>
+						</div>
+
+						<div class="the-link">
+							<a href="http://localhost/reg/reg.html" class="the-link-zhuce">立即注册</a>
+							<a href="#" class="the-link-forget find-psw">忘记密码？</a>
+						</div>
+
+						<div class="button-denglu">
+							<button class="denglu-btn" type="button" onclick="login()">登录</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer" id="footer" style="position: fixed; bottom: 0px;">
+			<div class="footer-right">
+				<div style="margin-bottom:-10px;margin-top:-15px;"><h style="font-size:10px; letter-spacing:5px;color:gray">Powered By</h>
+				<h style="font-size:10px; letter-spacing:5px">计算机科学技术学院电子信息专业</h></div>
+				<div style="margin-bottom:-10px;margin-top:-5px;"><h style="font-size:10px; letter-spacing:5px;color:gray">Design By</h>
+				<h style="font-size:10px; letter-spacing:5px">叶浩晨</h></div>
+			</div>
+		</div>
+
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/bootstrap.js"></script>
+		<script src="./plugins/layer/layer.js"></script>
+		<script src="./js/login.js"></script>
+		<script src="./js/uploadfile.js"></script>
+		<script src="./js/formvalid.js"></script>
+		<script src="./js/Type.js"></script>
+		<script>
+			function setWidth() {
+				var maxwidth = document.body.clientWidth;
+
+				var header = document.getElementById("header");
+				header.style.width = (maxwidth) * 1 + "px";
+
+				var footer = document.getElementById("footer");
+				footer.style.width = (maxwidth) * 1 + "px";
+
+				var loginback = document.getElementById("loginback");
+				loginback.style.width = (maxwidth) * 1 + "px";
+
+			}
+		</script>
+	</body>
+
+</html>

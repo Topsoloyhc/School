@@ -1,0 +1,89 @@
+html {
+  padding: 0; }
+
+body {
+  padding: 0;
+  background-color: #006cb5; }
+
+a {
+  color: black;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+@font-face {
+  font-family: 'logo';
+  src: url("../fonts/logo.ttf") format("truetype"); }
+
+.header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; }
+  .header-logo {
+    padding: 0 110px 0 68px;
+    font-size: 34px;
+    font-family: 'logo'; }
+  .header-nav-item {
+    display: inline-block;
+    padding: 30px 40px;
+    font-size: 26px;
+    text-decoration: none;
+    color: black; }
+  .header-user {
+    margin-right: 45px;
+    display: flex;
+    align-items: center; }
+    .header-user-img {
+      width: 36px;
+      height: 36px;
+      -webkit-border-radius: 18px;
+      -moz-border-radius: 18px;
+      border-radius: 18px;
+      margin-right: 10px; }
+    .header-user-line {
+      font-size: 28px;
+      padding: 0 14px; }
+    .header-user-link {
+      font-size: 21px;
+      text-decoration: none;
+      color: black; }
+
+.footer {
+
+  color: white;
+  background-color: #242424;
+  font-size: 23px;
+  font-family: 'logo'; }
+  .footer-message {
+    margin-left: 137px;
+    padding-top: 35px; }
+  .footer-right {
+    padding: 11px;
+    text-align: center; }
+
+h2
+{
+	background:#344140   !important;
+	border-radius: 6px 6px 6px 6px !important;
+	color: #FFFFFF;
+	font-family: "宋体";
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 70px;
+	padding-top:5px;
+
+	text-shadow: 2px 2px 3px #222222;
+	text-align:center;
+}
+     .select {
+		font-size:1.3em;
+       padding: 20px 20px;
+        width: 550px;
+        border: 2px solid darkgrey;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 15px; }
+		
+	

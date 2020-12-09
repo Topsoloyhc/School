@@ -1,0 +1,186 @@
+.user {
+	/*width: 1440px;*/
+	height: 426px;
+	background-color: rgba(0, 108, 182, 1);
+	box-shadow: inset 15.6px 15.6px 111px 0px 
+				rgba(0, 0, 0, 0.28);
+	display: flex;  
+  	flex-direction:column;	
+}
+     
+	.user-headportrait-block-img {
+		width: 141px;
+		height: 141px;
+		margin-top: 65px;
+		align-self:center;
+    	-webkit-border-radius: 107px;
+    	-moz-border-radius: 107px;
+    	border-radius: 107px;
+    	border: 1px solid grey; 
+	}
+	.user-name{
+		height: 45px;
+		margin-top: 29px;
+		align-self:center;
+		font-family: ﻿PingFangSC-Regular;
+		font-size: 48px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: -1.2px;
+		color: #ffffff;
+	}
+	.user-information-text{
+		margin-top: 21px;
+		line-height: normal;
+		align-self:center;
+	}
+	.user-information-text-line {
+		line-height: normal;
+		height: 18px;
+      	font-size: 18px;
+      	font-weight: 900;
+      	padding: 0 14px;
+      	color: white; }
+    .user-information-text-link {
+    	font-family: ﻿PingFangSC-Regular;
+    	font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+      	font-size: 18px;
+      	text-decoration: none;
+      	letter-spacing: 0.5px;
+      	color: white; }
+	.user-information-num{
+		margin-bottom: 66px;
+		line-height: normal;
+		align-self:center;
+	}
+	.user-information-num-line {
+		line-height: normal;
+		height: 18px;
+      	font-size: 18px;
+      	font-weight: 900;
+      	padding: 0 14px;
+      	color: white; }
+    .user-information-num-link {
+    	font-family: ﻿PingFangSC-Regular;
+    	font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+      	font-size: 18px;
+      	text-decoration: none;
+      	letter-spacing: 0.5px;
+      	color: white; }
+  
+.catalogue {
+  	height: 120px;
+	background-color: rgba(236, 236, 236, 1); 
+	display: flex;  
+  	flex-direction:column;
+  	}
+  	.catalogue-img{
+  		align-self:center;
+  	}
+  	
+  
+.content {
+	height: 735px;
+	background-color: white;
+	min-width: 1350px;
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  	background-color: white; 
+	display: flex;  
+  	flex-direction:column;
+	}
+	.content-newproject ul li{
+		margin-top: 74px;
+		line-height: normal;
+		float: left;
+    	list-style-type: none;
+		/*align-self:center;*/
+	}
+	
+	a.content-newproject-left {
+		
+		width: 500px;
+		height: 584px;
+		margin: 0px 79px;
+		background:url('../images/newproject_1.png');border:0px;
+		background-repeat:no-repeat;
+    	background-position:center;
+    	line-height: normal;
+    	font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		display: inline-block;
+		text-decoration: none;
+	}
+	a.content-newproject-right {
+		
+		width: 500px;
+		height: 584px;
+		margin:0px 79px;
+		background-image: url('../images/newproject_2.png');
+		background-repeat:no-repeat;
+    	background-position:center;
+    	line-height: normal;
+    	font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		display: inline-block;
+		text-decoration: none;
+		display: flex;  
+  		flex-direction:column;
+	}
+	.content-newproject-right-word-1{
+		padding-top: 129px;
+		font-family: ﻿PingFangSC-Regular;
+		font-size: 40px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 0px;
+		letter-spacing: 1px;
+		color: #fefefe;
+		align-self:center;
+	}
+	.content-newproject-right-word ul li{
+		margin-left:42px;
+		padding-top: 38px;
+		height: 28px;
+		line-height: normal;
+		float: left;
+    	list-style-type: none;
+	}
+	.content-newproject-right-word-2{
+		font-family: ﻿PingFangSC-Regular;
+		height: 28px;
+		font-size: 30px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 0px;
+		letter-spacing: 0.8px;
+		color: #fefefe;
+	}
+	.content-newproject-right-word-3{
+		padding-bottom: 22px;
+		font-family: ﻿PingFangSC-Regular;
+		height: 28px;
+		font-size: 30px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 0px;
+		letter-spacing: 0.8px;
+		color: #fefefe;
+	}
+	

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>报名</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/common1.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body onload="setWidth()">
+<div class="header" id="header">
+    <div>
+    <img class="logo-img" src="../images/logo-bule.png" />
+        <a href="../财经院校比赛管理系统主页.html" class="header-nav-item">首页</a>
+		<a href="../官方新闻_全国财经类高校XXXX大赛.html" class="header-nav-item">比赛动态</a>
+		<a href="../大赛通知_全国财经类高校XXXX大赛.html" class="header-nav-item">关于比赛</a>
+  
+	</div>
+    <div class="header-user">
+        <!--<img src="../images/stupid.jpg" class="header-user-img"/>-->
+        <a href="../main/main.html" class="header-user-link">个人主页</a>
+        <span class="header-user-line">|</span>
+        <a href="../login.html" class="header-user-link">退出</a>
+        <!--<a href="#" class="header-user-link">登录</a>-->
+        <!--<span class="header-user-line">|</span>-->
+        <!--<a href="" class="header-user-link">注册</a>-->
+    </div>
+</div>
+<div id="nav">
+	<nav align="center">
+	<ul>
+		<a href="#" class="one"><li id="li1" style="background-color: white;color: #006cb5; " onclick="location1();">团队信息</li></a>
+		<a href="#" class="one"><li id="li2" style="color: white " onclick="location2();">项目信息</li></a>
+		<a href="#" class="one"><li id="li3" style="color: white " onclick="location3();">指导老师</li></a>
+	</ul>
+	</nav>
+</div>
+<div class="login" id="loginback">
+    <h3 class="login-header">申请报名</h3>
+    <form>
+        <div class="login-form" id="m1">
+            <div class="login-form-title">
+                <h4><span class="login-form-title-content">团队成员信息</span></h4>
+            </div>
+            <div class="login-form-content">
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>真实姓名</div>
+                    <div class="login-form-content-item-input-wrapper">
+                        <span class="m-name-one"></span>
+                    </div>
+                </div>
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>团队角色</div>
+                    <div class="login-form-content-item-input-wrapper">
+						<span class="m-type-one">负责人</span>
+                    </div>
+                </div>
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>学校名称</div>
+                    <div class="login-form-content-item-input-wrapper">
+						<span class="m-school-one"></span>
+                        <!-- <input type="text" name="school" class="login-form-content-item-input require m-school-one" placeholder="请输入学校全称，如“中南财经政法大学”"/> -->
+                    </div>
+                </div>
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>专业名称</div>
+                    <div class="login-form-content-item-input-wrapper">
+						<!-- <span id="msg-professional">计科</span> -->
+                        <input type="text" name="major" class="login-form-content-item-input require m-professional-one" placeholder="请输入专业名称"/>
+                    </div>
+                </div>
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon ">*</i>身份证号</div>
+                    <div class="login-form-content-item-input-wrapper">
+						<span class="m-idnum-one"></span>
+                        <!-- <input type="text" name="idCard" class="login-form-content-item-input require m-idnum m-idnum-one" placeholder="请输入身份证号"/> -->
+                    </div>
+                </div>
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>手机号码</div>
+                    <div class="login-form-content-item-input-wrapper">
+						<span class="m-tel-one"></span>
+                        <!-- <input type="tel" name="tel" class="login-form-content-item-input require m-tel m-tel-one" placeholder="请输入手机号码"/> -->
+                    </div>
+                </div>
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>电子邮箱</div>
+                    <div class="login-form-content-item-input-wrapper">
+						<span class="m-email-one"></span>
+                        <!-- <input type="email" name="email" class="login-form-content-item-input require m-email-one" placeholder="请输入电子邮箱"/> -->
+                    </div>
+                </div>
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>入学年份</div>
+                    <div class="login-form-content-item-input-wrapper">
+                        <select name="year" class="login-form-content-item-input require m-start-time-one">
+                            <option style="display: none;" selected>请选择入学年份</option>
+                            
+                            <option>2012</option>
+                            <option>2013</option>
+                            <option>2014</option>
+                            <option>2015</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		
+
+		<!--teacher-->
+		<div class="login-form" id="teacher" style="display:none">
+            <div class="login-form-title">
+                <h4><span class="login-form-title-content">指导老师</span></h4>
+            </div>
+            <div class="login-form-content">
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>姓名</div>
+                    <div class="login-form-content-item-input-wrapper">
+                        <input type="text" name="teachername" class="login-form-content-item-input require t-name-one" placeholder="请输入指导老师姓名"/>
+                    </div>
+                </div>
+
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>学校</div>
+                    <div class="login-form-content-item-input-wrapper">
+                        <input type="text" name="academy" class="login-form-content-item-input require t-school-one" placeholder="请输入学校全称，如“中南财经政法大学”"/>
+                    </div>
+                </div>
+
+				
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>学院</div>
+                    <div class="login-form-content-item-input-wrapper">
+                        <input type="text" name="academy" class="login-form-content-item-input require t-academy-one" placeholder="请输入学院名称"/>
+                    </div>
+                </div>
+         
+              
+
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>职称</div>
+                    <div class="login-form-content-item-input-wrapper">
+                        <select name="title" class="login-form-content-item-input require t-rank-one">
+                            <option style="display: none;" selected>职称</option>
+                            <option>助教</option>
+                            <option>讲师</option>
+                            <option>副教授</option>
+                            <option>教授</option>
+                            <option>无</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<!--teacher2-->
+		<div class="login-form" id="teacher2" style="display:none">
+            <div class="login-form-title">
+                <h4><span class="login-form-title-content">其他老师</span><span>&nbsp;&nbsp;&nbsp;</span><a onclick="removeteacher()" href="#" class="a_demo_one">点击删除</a></h4>
+            </div>
+            <div class="login-form-content">
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>姓名</div>
+                    <div class="login-form-content-item-input-wrapper">
+                        <input type="text" name="teachername" class="login-form-content-item-input require t-name-two" placeholder="请输入指导老师姓名"/>
+                    </div>
+                </div>
+
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>学校</div>
+                    <div class="login-form-content-item-input-wrapper">
+                        <input type="text" name="academy" class="login-form-content-item-input require t-school-two" placeholder="请输入学校全称，如“中南财经政法大学”"/>
+                    </div>
+                </div>
+
+				
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>学院</div>
+                    <div class="login-form-content-item-input-wrapper">
+                        <input type="text" name="academy" class="login-form-content-item-input require t-academy-two" placeholder="请输入学院名称"/>
+                    </div>
+                </div>
+         
+              
+
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>职称</div>
+                    <div class="login-form-content-item-input-wrapper">
+                        <select name="title" class="login-form-content-item-input t-rank-two require">
+                            <option style="display: none;" selected>职称</option>
+                            <option>助教</option>
+                            <option>讲师</option>
+                            <option>副教授</option>
+                            <option>教授</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		        <!--login-form-->
+        <div class="login-form" id="info" style="display:none">
+            <div class="login-form-title">
+                <h4><span class="login-form-title-content">项目信息</span></h4>
+            </div>
+            <div class="login-form-content">
+            	<div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>赛道类别</div>
+                    <div class="login-form-content-item-input-wrapper">
+                        <select name="title" class="login-form-content-item-input p-project-type require">
+                            <option style="display: none;" selected>请选择参与赛道</option>
+                            <option value="1">主赛道</option>
+                            <option value="2">专项赛道</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>项目名称</div>
+                    <div class="login-form-content-item-input-wrapper">
+                        <input type="text" name="project" class="login-form-content-item-input require p-name" placeholder="请输入项目名称"/>
+                    </div>
+                </div>
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>项目简介</div>
+                    <div class="login-form-content-item-input-wrapper">
+                        <textarea class="login-form-content-item-input login-form-content-item-textarea-large require p-des" placeholder="请输入项目简介..."></textarea>
+                    </div>
+                </div>
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>网盘链接</div>
+                    <div class="login-form-content-item-input-wrapper">
+                        <input type="text" name="project" class="login-form-content-item-input require p-file-link" placeholder="请输入附件网盘链接,并确保链接无误"/>
+                    </div>
+                </div>
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>链接密码</div>
+                    <div class="login-form-content-item-input-wrapper">
+                        <input type="text" name="project" class="login-form-content-item-input require p-file-link-psw" placeholder="请输入附件网盘链接密码,没有请填“无”"/>
+                    </div>
+                </div>
+                <div class="login-form-content-item">
+                    <div class="login-form-content-item-header"><i class="login-form-content-item-icon">*</i>项目logo (图片文件请以项目名命名)</div>
+                    <div class="login-form-content-item-block">
+                        <img src="../images/nothing.jpg"  class="login-form-content-item-block-img" id="imgInput-img"/>
+                        <div class="login-form-content-item-block-button">
+                            <div class="login-form-content-item-block-button-hack">
+                                <button class="login-form-content-item-block-button-hack-mock" id="imgInput-mock">点击上传</button>
+                                <input type="file" accept="image/*" class="login-form-content-item-block-button-hack-real require" id="imgInput-real"/>
+                            </div>
+                            <p class="login-form-content-item-block-button-description">支持小于3M的JPG、GIF、PNG格式</p>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+	</form>
+
+		<div align="center" class="login-button-wrapper" id="btn1">
+			<!-- <button class="login-button" onclick="add();">添加成员</button> -->
+		   <button class="login-button" onclick="location2();">下一步</button>
+		</div>
+		
+		
+
+		
+		<div align="center" class="login-button-wrapper" id="btn2" style="display:none">
+			<button class="login-button" onclick="location1();">&nbsp;上一步&nbsp;</button>
+		   <button class="login-button" onclick="location3();">下一步</button>
+		</div>
+		
+		<div align="center" class="login-button-wrapper" id="btn4" style="display:none">
+			<button class="login-button" onclick="addteacher();">添加老师</button>
+		</div>
+		<div align="center" class="login-button-wrapper" id="btn3" style="display:none">
+			<button class="login-button" onclick="location2();">&nbsp;上一步&nbsp;</button>
+		   <button class="login-button" onclick="addProject()">&nbsp;提交&nbsp;</button>
+		</div>
+		
+
+</div>
+
+<div class="footer" id="footer">
+    
+    <div class="footer-right">
+       <div style="margin-bottom:-10px;margin-top:-15px;"><h style="font-size:10px; letter-spacing:5px;color:gray">Powered By</h>
+				<h style="font-size:10px; letter-spacing:5px">计算机科学技术学院电子信息专业</h></div>
+				<div style="margin-bottom:-10px;margin-top:-5px;"><h style="font-size:10px; letter-spacing:5px;color:gray">Design By</h>
+				<h style="font-size:10px; letter-spacing:5px">叶浩晨</h></div>
+    </div>
+</div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/layer/layer.js"></script>
+    <script src="../js/uploadfile.js"></script>
+    <script src="../js/login.js"></script>
+	<script src="../js/sign-up.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>校级管理员-填写回执</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/common1.css">
+    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet" href="./css/member-msg.css">
+    
+</head>
+<body>
+<div class="header">
+    <div class="link-head">
+    <img class="logo-img" src="../images/logo-bule.png" />
+        <a href="财经院校比赛管理系统主页.html" class="header-nav-item">首页</a>
+		<a href="官方新闻_全国财经类高校XXXX大赛.html" class="header-nav-item">比赛动态</a>
+		<a href="大赛通知_全国财经类高校XXXX大赛.html" class="header-nav-item">关于比赛</a>
+
+	</div>
+    <div class="header-user">
+         <!--<img src="../images/stupid.jpg" class="header-user-img"/>-->
+        <a href="#" class="header-user-link to-admin-tmp2">管理主页</a>
+        <span class="header-user-line">|</span>
+        <a href="login.html" class="header-user-link">退出</a>
+        <!--<a href="#" class="header-user-link">登录</a>-->
+        <!--<span class="header-user-line">|</span>-->
+        <!--<a href="#" class="header-user-link">注册</a>-->
+    </div>
+</div>
+
+<div class="admin-content">
+    <div class="admin-content-wrapper">
+       <div class="msg-part">
+       		<h4 class="part-head">基本信息</h4>
+       		<div class="btn-edit">
+       			<a href="#" class="edit">编辑</a>
+       		</div>
+       		
+       		<div po-content>
+       			<div class="input-long">
+       				姓名：<input class="input-style m_name" placeholder="请输入姓名" type="text"/>
+       			</div>
+       			<div class="input-short">
+       				<span class="input-span ">
+       					性别：
+       				</span> 
+       				<select class="input-style m_sex">
+                        <option >请选择性别</option>
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                    </select>
+                </div>
+       			<div class="input-long">
+       				职务：<input class="input-style m_position" placeholder="请输入职务" type="text" />
+				</div>       			
+       			<div class="input-short">
+       				<span class="input-span">
+       					人员类别：
+       				</span>
+       				<select class="input-style m_type">
+                        <option style="display: none;" selected>请选择人员类别</option>
+                        <option value="校领导">校领导</option>
+                        <option value="创业主管部门领导">创业主管部门领导</option>
+                        <option value="项目指导老师">项目指导老师</option>
+                        <option value="领队">领队</option>
+                        <option value="工作人员">工作人员</option>
+                        <option value="参赛学生">参赛学生</option>
+                    </select>
+       			</div>
+       			<div class="input-long">
+       			手机：<input  class="input-style m_phone" placeholder="请输入手机号码" />
+       			</div>
+       			<div class="input-short">
+       				<span class="input-span">
+       					餐饮类别：
+       				</span>
+       			 	<select class="input-style m_food_type">
+                        <option style="display: none;" selected>请选择餐饮类别</option>
+                        <option value="普通餐">普通餐</option>
+                        <option value="清真餐">清真餐</option>
+                    </select>
+                </div>
+       		</div>
+       		<div class="po-bun">
+       			<button class="po-btn-save btn-save-one">保&emsp;存</button>
+       			<button class="po-btn-cancel btn-cancel-one">取&emsp;消</button>
+       		</div>
+       </div>
+       <div class="apart-line"></div>
+       <div class="msg-part">
+       		<h4 class="part-head">交通工具</h4>
+       		<div class="btn-edit">
+       			<a href="#" class="edit">编辑</a>
+       		</div>
+       		<div po-content>
+       			<div class="input-normal">
+       				车次或航班号：<input class="input-style car_num" placeholder="请输入车次或航班号" type="text"/>
+       			</div>
+       			<div class="input-long">
+       				出发日期：<input class="input-style go_date" placeholder="请选择出发日期"/>
+       			</div>
+       			<div class="input-short">
+       				<span class="input-span">
+       					出行方式：
+       				</span> 
+       				<select class="input-style go_type">
+       					<option style="display: none;" selected>请选择出行方式</option>
+                        <option value="火车">火车</option>
+                        <option value="飞机">飞机</option>
+                        <option value="汽车">汽车</option>
+                        <option value="轮船">轮船</option>
+                    </select>
+                </div>
+       			<div class="input-long">
+       				到站时间：<input class="input-style arrive_time" placeholder="请选择到站时间"/>
+				</div>       			
+       			<div class="input-short">
+       				<span class="input-span">
+       					到站地点：
+       				</span>
+       				<input class="input-style arrive_place" placeholder="请输入到站地点" type="text" />
+       			</div>
+       			<div class="input-long">
+       			离站时间：<input class="input-style go_time" placeholder="请选择离站时间"  />
+       			</div>
+       			<div class="input-short">
+       				<span class="input-span">
+       					离站地点：
+       				</span>
+       				<input class="input-style go_place" placeholder="请输入离站地点" type="text" />
+                </div>
+       		</div>
+       		<div class="po-bun">
+       			<button class="po-btn-save btn-save-two">保&emsp;存</button>
+       			<button class="po-btn-cancel btn-cancel-two">取&emsp;消</button>
+       		</div>
+       </div>
+        <div class="apart-line"></div>
+       <div class="msg-part">
+       		<h4 class="part-head">住宿信息</h4>
+       		<div class="btn-edit">
+       			<a href="#" class="edit">编辑</a>
+       		</div>
+       		<div po-content>
+       			<div class="input-long">
+       				入住时间：<input class="input-style in_time" placeholder="请选择入住时间"/>
+       			</div>
+       			<div class="input-short">
+       				入住天数：<input class="input-style live_time" placeholder="请输入入住天数" type="number"/>
+                </div>
+       			<div class="input-long">
+       				离店时间：<input class="input-style out_time" placeholder="请选择离店时间"/>
+				</div>       			
+       			<div class="input-short">
+       				<span class="input-span">
+       					房间类型：</span> 
+       				<select class="input-style live_type">
+                        <option style="display: none;" selected>请选择房间类型</option>
+                        <option value="单间">单间</option>
+                        <option value="标间">标间</option>
+                    </select>
+       			</div>
+       		</div>
+       		<div class="extra-content-div">
+       			<span class="extra-content-head">备&emsp;&emsp;注：</span>
+       			<textarea class="input-style extra-content" placeholder="如有其他情况说明，请填写备注" ></textarea>
+       		</div>
+       		<div class="po-bun">
+       			<button class="po-btn-save btn-save-three">保&emsp;存</button>
+       			<button class="po-btn-cancel btn-cancel-two">取&emsp;消</button>
+       		</div>
+       </div>
+       <div class="apart-line"></div>
+       <button class="btn-add-back-msg">新增回执信息</button>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-right">
+        <div style="margin-bottom:-10px;margin-top:-15px;"><h style="font-size:10px; letter-spacing:5px;color:gray">Powered By</h>
+		<h style="font-size:10px; letter-spacing:5px">计算机科学技术学院电子信息专业</h></div>
+		<div style="margin-bottom:-10px;margin-top:-5px;"><h style="font-size:10px; letter-spacing:5px;color:gray">Design By</h>
+		<h style="font-size:10px; letter-spacing:5px">叶浩晨</h></div>
+    </div>
+</div>
+<script src="./js/jquery.min.js"></script>
+<script src="plugins/laydate/laydate.js"></script>
+<script src="./js/member-msg.js"></script>
+</body>
+</html>

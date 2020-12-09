@@ -1,0 +1,134 @@
+tr
+{
+	height:54px;
+	width:80%;
+}
+		
+		 #code{ 
+            font-family:Arial,����; 
+            font-style:italic; 
+            color:green; 
+            border:0;			
+            padding:10px 10px; 
+            letter-spacing:3px; 
+            font-weight:bolder; 
+        } 
+		
+
+
+		.reg-code{
+		position:absolute;
+		top:752px;
+		left:80%;
+		}
+
+		.reg-warn1{
+		position:absolute;
+		top:246px;
+		left:80%;
+		color:red;
+		}
+		.reg-warn2{
+		position:absolute;
+		top:310px;
+		left:80%;
+		color:red;
+		}
+		.reg-warn3{
+		position:absolute;
+		top:374px;
+		left:80%;
+		color:red;
+		}
+		.reg-warn4{
+		position:absolute;
+		top:440px;
+		left:80%;
+		color:red;
+		}
+		.reg-warn5{
+		position:absolute;
+		top:567px;
+		left:80%;
+		color:red;
+		}
+		.reg-warn6{
+		position:absolute;
+		top:630px;
+		left:80%;
+		color:red;
+		} 
+
+		.reg-warn7{
+		position:absolute;
+		top:120px;
+		left:80%;
+		color:red;
+		}
+	.reg-warn8{
+		position:absolute;
+		top:120px;
+		left:80%;
+		color:red;
+		}
+.reg-warn9{
+		position:absolute;
+		top:567px;
+		left:80%;
+		color:red;
+		}
+
+
+
+
+.input1{
+  box-sizing: border-box;
+  padding-left:10px;
+  font-size:20px;
+  height:40px;
+  width: 310px;
+  border-radius:4px;
+  border:1px solid #c8cccf;
+  color:#6a6f77;
+  -web-kit-appearance:none;
+  -moz-appearance: none;
+  display:block;
+  outline:0;
+  text-decoration:none;
+ 
+}
+
+ .sexselect {
+		font-size:0.7em;
+        padding: 11px 20px;
+        width: 310px;
+        border: 1px solid darkgrey;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px; }
+
+
+ :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      text-align:left;
+   font-size: 15px;
+   line-height: 50px;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+       text-align:left;
+   font-size: 15px;
+   line-height: 50px;
+}
+
+input:-ms-input-placeholder{
+     text-align:left;
+   font-size: 15px;
+   line-height: 50px;
+}
+
+input::-webkit-input-placeholder{
+      text-align:left;
+   font-size: 15px;
+   line-height: 50px;
+}
+ 

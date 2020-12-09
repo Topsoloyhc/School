@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>最高管理员</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/font-awesome.css">
+		<link rel="stylesheet" href="../css/common1.css">
+		<link rel="stylesheet" href="../css/admin.css">
+		<link rel="stylesheet" href="../plugins/DataTables/css/jquery.dataTables.min.css" />
+	</head>
+
+	<body onload="setWidth();">
+		<div class="heigh-parent">
+			<div class="header" id="header">
+				<div class="link-head">
+					<img class="logo-img" src="../images/logo-bule.png" />
+					 <a href="../财经院校比赛管理系统主页.html" class="header-nav-item">首页</a>
+					<a href="../官方新闻_全国财经类高校XXXX大赛.html" class="header-nav-item">比赛动态</a>
+					<a href="../大赛通知_全国财经类高校XXXX大赛.html" class="header-nav-item">关于比赛</a>
+				</div>
+				<div class="header-user">
+					<!--<img src="../images/stupid.jpg" class="header-user-img"/>-->
+					<a href="#" class="header-user-link to-user-main">管理主页</a>
+					<span class="header-user-line">|</span>
+					<a href="../login.html" class="header-user-link">退出</a>
+					<!--<a href="#" class="header-user-link">登录</a>-->
+					<!--<span class="header-user-line">|</span>-->
+					<!--<a href="#" class="header-user-link">注册</a>-->
+				</div>
+			</div>
+
+			<div class="admin-header" id="adminheader">
+				<div class="admin-header-wrapper">
+					<img src="../images/zuel.jpg" class="admin-header-logo" />
+					<div class="admin-header-message">
+						<h1 class="admin-header-message-title">中南财经政法大学</h1>
+						<button class="edit-pingwei-psw">修改密码</button>
+						<div class="admin-header-message-icon-wrapper">
+							<span class="admin-header-message-small"><i class="fa fa-phone"></i>&nbsp;<span class="ad-phone"></span></span>
+							<span class="admin-header-message-small"><i class="fa fa-envelope-o"></i>&nbsp;<span class="ad-email"></span></span>
+						</div>
+					</div>
+					<div class="admin-header-count">
+
+					</div>
+				</div>
+			</div>
+
+			<div class="admin-content" id="admincontent">
+				<div class="admin-table-wrapper">
+					<div class="admin-table-search">
+						赛道类别：
+						<select class="admin-table-search-input competition-type">
+							<option value="0">全部</option>
+							<option value="1">主赛道</option>
+							<option value="2">专项赛道</option>
+						</select>
+						项目状态：
+						<select class="admin-table-search-input project-status">
+							<option value="0">全部</option>
+							<option value="1">评选中</option>
+							<option value="2">已晋级</option>
+						</select>
+					</div>
+					<button class="before-table-button btn-filter">筛选</button>
+					<table style="width:100%" id="project-table" class="stripe hover table admin-table text-center">
+						<thead>
+							<tr>
+								<th>比赛类别</th>
+								<th>学校</th>
+								<th>项目名</th>
+								<th>负责人</th>
+								<th>状态</th>
+								<th>评委一</th>
+								<th>评委二</th>
+								<th>评委三</th>
+								<th>评委四</th>
+								<th>评委五</th>
+								<th>评审</th>
+								<th style="display:none;"></th>
+								<th>操作</th>
+								<th style="display:none;"></th>
+								<th style="display:none;"></th>
+								<th style="display:none;"></th>
+								<th style="display:none;"></th>
+								<th style="display:none;"></th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="footer" id="footer">
+			<div class="footer-right">
+				<div style="margin-bottom:-10px;margin-top:-15px;"><h style="font-size:10px; letter-spacing:5px;color:gray">Powered By</h>
+				<h style="font-size:10px; letter-spacing:5px">计算机科学技术学院电子信息专业</h></div>
+				<div style="margin-bottom:-10px;margin-top:-5px;"><h style="font-size:10px; letter-spacing:5px;color:gray">Design By</h>
+				<h style="font-size:10px; letter-spacing:5px">叶浩晨</h></div>
+			</div>
+		</div>
+		<script src="../js/jquery.min.js"></script>
+		<script src="../plugins/DataTables/js/jquery.dataTables.min.js"></script>
+		<script src="../plugins/layer/layer.js"></script>
+		<script src="../js/admin-tmp3.js"></script>
+	</body>
+
+</html>

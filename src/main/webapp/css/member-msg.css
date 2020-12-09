@@ -1,0 +1,146 @@
+.apart-line
+{
+	width: 86%;
+	margin: auto;
+	height: 2px;
+	background: #006cb5;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.apart-line-all
+{
+	width: 100%;
+	margin: auto;
+	height: 1px;
+	background: #006cb5;
+	margin-bottom: 10px;
+}
+.msg-part
+{
+	width: 86%;
+	margin: auto;
+}
+.admin-content-wrapper button 
+{
+    font-size: 20px;
+    color: white;
+    background-color: #006cb5;
+    border: 0;
+    padding: 8px 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+}
+.admin-content-wrapper
+{
+	font-size: 18px;
+}
+.part-head
+{
+	text-align: center;
+	color: #006cb5;
+}
+.input-style
+{
+        padding: 10px 10px;
+        border: 1px solid darkgrey;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px; 
+}
+.input-style-text
+{
+	padding: 10px 10px;
+    border: 0px;
+    appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+}
+.input-long
+{
+	width:58%;
+	display: inline-block;
+	margin-top:20px ;
+}
+.input-long input
+{
+	width: 76%;
+}
+.input-short
+{
+	width: 40%;
+	display: inline-block;
+	margin-top:20px ;
+}
+.input-short input
+{
+	width: 68%;
+}
+.input-short select
+{
+	width: 68%;
+}
+.input-normal
+{
+	width: 100%;
+	margin-top:20px;
+}
+.input-normal input
+{
+	width: 82%;
+}
+.input-span{
+	width: 90px;
+	display: inline-block;
+}
+.po-bun{
+	width: 260px;
+	margin: auto;
+	margin-top:20px ;
+	margin-bottom:20px ;
+}
+.po-btn-save{
+	margin-right: 40px;
+}
+.btn-edit{
+	padding-left:80% ;
+	display: none;
+}
+.alarm
+{
+	text-align: center;
+}
+.btn-single{
+	width: 120px;
+	margin: auto;
+}
+.extra-content-div
+{
+	padding-top: 20px;
+}
+.extra-content-head{
+	margin-top: 10px;
+	display: inline-block;
+	height: 100px;
+	vertical-align: top;
+}
+.extra-content
+{
+	margin-right:-90px;
+	width: 86%;
+	height: 100px;
+}
+.btn-add-back-msg
+{
+	font-size: 20px;
+    color: white;
+    background-color: #006cb5;
+    border: 0;
+    padding: 8px 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+    display: block;
+    margin: auto;
+    margin-bottom: 60px;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册界面</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/common1.css">
+    <link rel="stylesheet" href="../css/login.css">
+	<link rel="stylesheet" href="../css/reg.css">
+    <link rel="stylesheet" href="../css/one-login.css">
+    
+</head>
+<body onload="setWidth();createCode()">
+<div class="header" id="header">
+   <img class="logo-img" src="../images/logo-bule.png" />
+    <div class="header-nav">
+        <a href="../财经院校比赛管理系统主页.html" class="header-nav-item">首页</a>
+		<a href="../官方新闻_全国财经类高校XXXX大赛.html" class="header-nav-item">比赛动态</a>
+		<a href="../大赛通知_全国财经类高校XXXX大赛.html" class="header-nav-item">关于比赛</a>
+
+    </div>
+    <div class="header-user">
+        <a href="../login.html" class="header-user-link">登录</a>
+        <span class="header-user-line">|</span>
+        <a href="../reg/reg.html" class="header-user-link">注册</a>
+    </div>
+</div>
+
+<div class="login-Background" id="loginback">
+    <div class="mid-reg-Background">
+
+<h2>注册</h2>
+<div align="center">
+    <form name = "frm" id="form1">
+	<table align="center" style="font-family:Microsoft YaHei; font-size:21px;border-collapse: separate;
+border-spacing:20px 10px;">
+		<br/>
+		<tr>
+			<td><span style="color:red">*</span>姓名：</td>
+			<td>
+			<input type = "text" name = "participant.Participant_name" id = "u_name" class="input1" placeholder="请输入姓名" /> 
+			</td>
+			
+		</tr>
+		<tr>
+			<td><span style="color:red">*</span>性别：</td>
+			<td>
+			<select id="sex" name = "participant.Participant_sex" class="sexselect require">
+                <option style="display: none;" selected>请选择性别</option>
+                <option value="1">男</option>
+                <option value="2">女</option>
+            </select>	
+			</td>
+		</tr>
+		<tr>
+			<td><span style="color:red">*</span>学校：</td>
+			<td>
+			<input type = "text" name = "participant.Participant_school" id = "u_sch" class="input1" placeholder="请输入学校全称，如“中南财经政法大学”" /></td>
+			
+		</tr>
+		<tr>
+			<td><span style="color:red">*</span>手机：</td>
+			<td><input type = "text" name = "participant.Participant_phone" id = "u_tel" class="input1" placeholder="请输入手机号码" /></td>
+		</tr>
+		<tr>
+			<td><span style="color:red">*</span>身份证号：</td>
+			<td><input type = "text" name = "participant.Participant_IDNumber" id = "u_idnum"  class="input1" placeholder="请输入本人身份证号" /></td>
+		</tr>
+		<tr>
+			<td><span style="color:red">*</span>邮箱：</td>
+			<td><input type = "text" name = "participant.Participant_mail" id = "u_email"  class="input1" placeholder="请输入电子邮箱" /></td>
+		</tr>
+		<tr>
+			<td><span style="color:red">*</span>地址：</td>
+			<td><input type = "text" name = "participant.Participant_address" class="input1" id = "u_add" placeholder="请输入地址信息" /></td>
+		</tr>
+		<tr>
+			<td><span style="color:red">*</span>用户名：</td>
+			<td>
+			<input type = "text" name = "participant.Participant_account" class="input1" id = "u_id" placeholder="用作登录账号，英文和数字组成，必须大于4位" /> </td>
+		</tr> 
+		<tr>
+			<td><span style="color:red">*</span>密码：</td>
+			<td><input type = "password" name = "participant.Participant_password"  class="input1" placeholder="英文和数字组成，必须大于8位"  id = "u_pwd" /></td>
+		</tr>
+		<tr>
+			<td><span style="color:red">*</span>确认密码：</td>
+			<td><input type = "password" name = "u_pwd1" class="input1" placeholder="请再次输入密码" id = "u_pwd1" /></td>
+		</tr>
+		
+		<tr>
+			<td><span style="color:red">*</span>验证码：</td>
+			<td><input type = "text" name = "u_code" class="input1" placeholder="请输入验证码" id = "u_code"/></td>
+		</tr>
+
+
+	</table> 
+	
+	    
+	</form>
+
+	<div class="reg-warn1" id="reg-warn1" style="display:none">
+	学校不可为空！
+	</div>
+	<div class="reg-warn2" id="reg-warn2" style="display:none">
+	手机格式错误！
+	</div>
+	<div class="reg-warn3" id="reg-warn3" style="display:none">
+	身份证号错误！
+	</div>
+	<div class="reg-warn4" id="reg-warn4" style="display:none">
+	邮箱格式错误！
+	</div>
+
+	<div class="reg-warn5" id="reg-warn5" style="display:none">
+	账号格式错误！
+	</div>
+	
+	<div class="reg-warn9" id="reg-warn9" style="display:none">
+	该账号已存在！
+	</div>
+	
+	<div class="reg-warn6" id="reg-warn6" style="display:none">
+	密码格式错误！
+	</div>
+	<div class="reg-warn7" id="reg-warn7" style="display:none">
+	两次输入的密码不一致！
+	</div>
+
+	<div class="reg-warn8" id="reg-warn8" style="display:none">
+	姓名不可为空！
+	</div>
+
+
+	
+	<div class="reg-code" id="reg-code">
+	<input type="button" id="code" style="width:80px;height:40px;" />
+	</div>
+
+    <div align="center" style="position:relative;bottom:20px;">
+        <button class="denglu-btn" onclick = "return checkfrm();">注册</button>
+    </div>
+
+
+
+</div>
+    </div>
+</div>
+
+<div class="footer" id="footer">
+    <div class="footer-right">
+       <div style="margin-bottom:-10px;margin-top:-15px;"><h style="font-size:10px; letter-spacing:5px;color:gray">Powered By</h>
+				<h style="font-size:10px; letter-spacing:5px">计算机科学技术学院电子信息专业</h></div>
+				<div style="margin-bottom:-10px;margin-top:-5px;"><h style="font-size:10px; letter-spacing:5px;color:gray">Design By</h>
+				<h style="font-size:10px; letter-spacing:5px">叶浩晨</h></div>
+    </div>
+</div>
+	<script src="../js/jquery.min.js"></script>
+    <script src="../plugins/layer/layer.js"></script>
+	<script src="../js/bootstrap.js">
+    <script src="../js/formvalid.js"></script>
+    <script src="../js/reg.js"></script>
+	<script>
+	function setWidth(){
+	var maxwidth=document.body.clientWidth;
+
+	var header=document.getElementById("header");
+	header.style.width=(maxwidth)*1+"px";
+	
+	
+	var footer=document.getElementById("footer");
+	footer.style.width=(maxwidth)*1+"px";
+
+	var loginback=document.getElementById("loginback");
+	loginback.style.width=(maxwidth)*1+"px";
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+.user {
+	/*width: 1440px;*/
+	height: 426px;
+	background-color: rgba(0, 108, 182, 1);
+	box-shadow: inset 15.6px 15.6px 111px 0px 
+				rgba(0, 0, 0, 0.28);
+	display: flex;  
+  	flex-direction:column;	
+}
+     
+	.user-headportrait-block-img {
+		width: 141px;
+		height: 141px;
+		margin-top: 65px;
+		align-self:center;
+    	-webkit-border-radius: 107px;
+    	-moz-border-radius: 107px;
+    	border-radius: 107px;
+    	border: 1px solid grey; 
+	}
+	.user-name{
+		height: 45px;
+		margin-top: 29px;
+		align-self:center;
+		font-family: ﻿PingFangSC-Regular;
+		font-size: 48px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: -1.2px;
+		color: #ffffff;
+	}
+	.user-information-text{
+		margin-top: 21px;
+		line-height: normal;
+		align-self:center;
+	}
+	.user-information-text-line {
+		line-height: normal;
+		height: 18px;
+      	font-size: 18px;
+      	font-weight: 900;
+      	padding: 0 14px;
+      	color: white; }
+    .user-information-text-link {
+    	font-family: ﻿PingFangSC-Regular;
+    	font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+      	font-size: 18px;
+      	text-decoration: none;
+      	letter-spacing: 0.5px;
+      	color: white; }
+	.user-information-num{
+		margin-bottom: 66px;
+		line-height: normal;
+		align-self:center;
+	}
+	.user-information-num-line {
+		line-height: normal;
+		height: 18px;
+      	font-size: 18px;
+      	font-weight: 900;
+      	padding: 0 14px;
+      	color: white; }
+    .user-information-num-link {
+    	font-family: ﻿PingFangSC-Regular;
+    	font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+      	font-size: 18px;
+      	text-decoration: none;
+      	letter-spacing: 0.5px;
+      	color: white; }
+  
+.catalogue {
+  	height: 120px;
+	background-color: rgba(236, 236, 236, 1); 
+	display: flex;  
+  	flex-direction:column;
+  	}
+  	.catalogue-img{
+  		align-self:center;
+  	}
+  	
+  
+.content {
+	height: 796px;
+	background-color: white;
+	display: flex;
+  	flex-direction:column;
+	}
+	.content-email {
+		margin-top: 58px;
+		height: 678px;
+		width: 1290px;
+		background-color: #ececec;
+		line-height: normal;
+		align-self:center;
+	}
+	.content-email-detail ul li{
+		margin-top: 42px;
+		
+		line-height: normal;
+		float: left;
+    	list-style-type: none;
+	}
+	.content-email-detail-left{
+		margin-bottom: 6px;
+		width: 381px;
+		height: 586px;
+		display: inline-block;
+	}
+	a.content-email-detail-left-titel-1{
+		margin-bottom: 20px;
+		width: 381px;
+		height: 72px;
+		border:0px;
+		background:url('../images/read_1.png');
+		background-repeat:no-repeat;
+    	background-position:center;
+    	line-height: normal;
+    	font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		display: inline-block;
+		text-decoration: none;
+	}
+	a.content-email-detail-left-titel-2{
+		margin-bottom: 20px;
+		width: 381px;
+		height: 72px;
+		border:0px;
+		background:url('../images/read_2.png');
+		background-repeat:no-repeat;
+    	background-position:center;
+    	line-height: normal;
+    	font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		display: inline-block;
+		text-decoration: none;
+	}
+	.content-email-detail-left-titel-word{
+		margin-left: 87px;
+		margin-top: 40px;
+		font-family: ﻿PingFangSC-Regular;
+		font-size: 26px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 0px;
+		letter-spacing: 0.7px;
+		color: #000000;
+		align-self:center;
+	}
+	.content-email-detail-right{
+		width: 776px;
+		height: 586px;
+		margin-left: 44px;
+		background-color: white;
+		display: inline-block;
+		text-decoration: none;
+	}
+	.content-email-detail-right-word{
+		margin-top: 73px;
+		margin-left: 44px;
+		width: 688px;
+		font-family: ﻿PingFangSC-Regular;
+		font-size: 24px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 42px;
+		letter-spacing: 0px;
+		color: #000000;
+	}
+
+	
